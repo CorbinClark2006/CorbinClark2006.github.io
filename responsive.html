@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            background-color: black;
+        }
+
+
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 150;
+            color: white;
+            text-align: center;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 60px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        img[id="Test Image 1"] {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 20px;
+           
+        }
+
+        img[id="Test Image 2"] {
+            position: absolute;
+            top: 1500px;
+            left: 150px;
+            margin: 0;
+            width: 200px;
+            height: auto;
+            display: block;
+            border-radius: 20px;
+            
+     
+        }
+
+        img[id="Test Image 3"] {
+            position: absolute;
+            
+            margin: 0;
+            width: 500px;
+            height: 3000px;
+            display: block;
+            z-index: -1;
+          
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Test Page</h1>
+
+    <img src="images/13_home.png" alt="Test Image" id="Test Image 1">
+
+    <img src="images/13_home.png" alt="Test Image 2" id="Test Image 2">
+
+    <img src="images/search_test_back.png" alt="Test Image 3" id="Test Image 3">
+
+
+
+    <button id="myButton">Click Me</button>
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            window.location.href = "anotherpage.html"; // Replace with the path to your target page
+        });
+    </script>
+</body>
+</html>
